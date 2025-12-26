@@ -1,0 +1,26 @@
+Epoch 1000/1000
+  Standard - Train: 1.3734, Test: 2.4493
+  ShiftAdd - Train: 2.4274, Test: 2.4340
+
+✓ Gráfico salvo como 'shift_add_language_model_comparison.png'
+================================================================================
+RESULTADOS FINAIS
+================================================================================
+Standard Model - Final Test Loss: 2.4493
+Shift-Add Model - Final Test Loss: 2.4340
+Diferença de performance: 0.62%
+✓ Modelo Standard teve MELHOR performance!
+Isso era esperado pois tem mais precisão numérica.
+Análise de Eficiência:
+Redução de multiplicações: 100.0%
+Aumento de adições: 0.0%
+Benefícios do modelo Shift-Add:
+✓ Zero multiplicações reais (apenas shifts e adições)
+✓ Mais eficiente energeticamente
+✓ Mais adequado para hardware especializado
+✓ Inspirado em métodos históricos de computação
+Limitações:
+⚠ Menor precisão numérica devido à quantização
+⚠ Pode requerer técnicas especiais de treinamento
+⚠ Menos expressivo que pesos reais de alta precisão
+================================================================================
